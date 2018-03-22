@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FacebookLiveAnimation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AB00F1771E86C2AC00CFAC73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB00F18B1E86C2AD00CFAC73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB00F1961E86C2AD00CFAC73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

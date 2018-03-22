@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live Animation-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LiveAnimation" customModule="FacebookLiveAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4k-3D-4mW">
+                                <rect key="frame" x="10" y="20" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J4h-76-gb3"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="pop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCT-Jk-txc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXr-SP-Ic7">
+                                <rect key="frame" x="166" y="604" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kc2-lb-3Qa"/>
+                                </constraints>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="playPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qyb-Kt-bxh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Y5-G7-SNV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-s0-JzO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="addAnimPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2FK-Ff-Bwf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Anywhere to start animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-tK-tcW">
+                                <rect key="frame" x="59" y="427" width="256.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ilu-s0-JzO" firstAttribute="top" secondItem="J4k-3D-4mW" secondAttribute="bottom" constant="-50" id="1vd-am-XrE"/>
+                            <constraint firstItem="PXr-SP-Ic7" firstAttribute="top" secondItem="Ilu-s0-JzO" secondAttribute="bottom" constant="-63" id="4Aw-h7-jhi"/>
+                            <constraint firstItem="7Y5-G7-SNV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="A0y-ur-5CY"/>
+                            <constraint firstItem="Ilu-s0-JzO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AoX-il-l7b"/>
+                            <constraint firstAttribute="trailing" secondItem="7Y5-G7-SNV" secondAttribute="trailing" id="Cpo-z7-em4"/>
+                            <constraint firstAttribute="trailing" secondItem="Ilu-s0-JzO" secondAttribute="trailing" id="Dla-kO-E7C"/>
+                            <constraint firstItem="0Ru-tK-tcW" firstAttribute="centerX" secondItem="Ilu-s0-JzO" secondAttribute="centerX" id="GPc-Lw-Tkj"/>
+                            <constraint firstItem="PXr-SP-Ic7" firstAttribute="centerX" secondItem="Ilu-s0-JzO" secondAttribute="centerX" id="LVB-jG-Ykh"/>
+                            <constraint firstItem="J4k-3D-4mW" firstAttribute="leading" secondItem="Ilu-s0-JzO" secondAttribute="leading" constant="10" id="ROr-NM-IJp"/>
+                            <constraint firstItem="7Y5-G7-SNV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dLZ-5R-zaz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ilu-s0-JzO" secondAttribute="bottom" id="iIL-9E-sYd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Y5-G7-SNV" secondAttribute="bottom" id="sMO-Qp-kzO"/>
+                            <constraint firstItem="Ilu-s0-JzO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v23-ea-LKY"/>
+                            <constraint firstItem="PXr-SP-Ic7" firstAttribute="top" secondItem="0Ru-tK-tcW" secondAttribute="bottom" constant="156" id="xiW-VB-X9g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addAnimButton" destination="Ilu-s0-JzO" id="efN-0d-w51"/>
+                        <outlet property="animationView" destination="7Y5-G7-SNV" id="OGJ-sH-kPl"/>
+                        <outlet property="cancelButton" destination="J4k-3D-4mW" id="43O-X4-l4K"/>
+                        <outlet property="playPause" destination="PXr-SP-Ic7" id="hUe-Zp-1aw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Landing Screen View Controller-->
+        <scene sceneID="2Rp-KW-uMM">
+            <objects>
+                <viewController id="s2m-q3-RKF" customClass="LandingScreenViewController" customModule="FacebookLiveAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eew-AT-lM3"/>
+                        <viewControllerLayoutGuide type="bottom" id="26c-lu-1V8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wXR-mx-Mvx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-LO-u7j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="643"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WE6-zV-5Wg">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xSL-4f-E5z">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iAU-LO-u7j" secondAttribute="trailing" id="0oD-rD-40Z"/>
+                            <constraint firstItem="iAU-LO-u7j" firstAttribute="leading" secondItem="wXR-mx-Mvx" secondAttribute="leading" id="ANg-LE-wsV"/>
+                            <constraint firstItem="iAU-LO-u7j" firstAttribute="top" secondItem="eew-AT-lM3" secondAttribute="bottom" id="WMc-Qu-3EN"/>
+                            <constraint firstItem="26c-lu-1V8" firstAttribute="top" secondItem="iAU-LO-u7j" secondAttribute="bottom" id="tPo-lq-uBy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videosCollectionView" destination="iAU-LO-u7j" id="fkf-M1-SzO"/>
+                        <segue destination="BYZ-38-t0r" kind="popoverPresentation" identifier="playVideosegue" popoverAnchorView="iAU-LO-u7j" id="gHy-nZ-Df0">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXE-xe-zW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903.20000000000005" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+</document>
